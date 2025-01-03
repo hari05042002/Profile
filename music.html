@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<title>Website Creation</title>
+</head>
+<style>
+body {
+    margin: 2% 5%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#a {
+    height: 50px;
+    width: 98%;
+    background-color: brown;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.a {
+    height: auto;
+    width: 97%;
+    background-color: #FFDEAD;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#b {
+    font-style: italic;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.d {
+    height: auto;
+    width: 98%;
+    background-color: brown;
+    padding: 10px;
+    border: 2px ridge black;
+    margin-top: 20px;
+}
+
+.b {
+    display: inline-block;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    padding-left: 100px;
+}
+
+.b:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+a {
+    padding: 10px;
+    color: black;
+}
+
+aside {
+    background-color: brown;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    color: white;
+    float: left;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#login {
+    text-align: center;
+    color: white;
+    font-style: oblique;
+}
+
+form {
+    padding-left: 25px;
+}
+
+#button {
+    background-color: black;
+    color: white;
+}
+
+#blog {
+    text-align: center;
+    color: white;
+    font-style: oblique;
+}
+
+h4 {
+    padding-left: 20px;
+    color: yellow;
+}
+
+.p {
+    padding-left: 20px;
+}
+
+#view {
+    padding-left: 20px;
+}
+
+main {
+    background-color: #f7f7f7;
+    width: 65%;
+    height: auto;
+    padding: 20px;
+    float: right;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+span {
+    display: flex;
+}
+
+h2 {
+    border: 1px solid black;
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+}
+
+.Viewmore {
+    color: white;
+    background-color: rgb(117, 85, 45);
+    border: 1px solid rgb(177, 143, 79);
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.albums {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.albums div {
+    padding: 0px 25px 0px 10px;
+}
+
+.news {
+    color: yellow;
+    padding: 0px;
+}
+
+footer {
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subscribe {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subscribe input[type="submit"] {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe input[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+.error {
+    color: rgb(8, 106, 57);
+    padding-left: 10px;
+    font-size: 14px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+
+<body>
+
+<header id="a">Music Layout</header>
+
+<div class="a">
+    <header id="b">Welcome to the Music Store:</header>
+    <p>Music is generally defined as the art of arranging sound to create a combination of form, harmony, melody, rhythm, or expressive content. While definitions of music vary depending on culture, it is an aspect of all human societies and a cultural universal.</p>
+    <a href="#" style="color:brown;">Read more</a>
+</div>
+
+<div class="d">
+    <ol>
+        <li class="b">Main Page</li>
+        <li class="b">Videos</li>
+        <li class="b">Audios</li>
+        <li class="b" style="color:yellow;">Albums</li>
+        <li class="b">Artist</li>
+        <li class="b">Contact</li>
+    </ol>
+</div>
+
+<span>
+<aside>
+    <h3 id="login">Customer Login</h3>
+    <form id="loginForm">
+        <table>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <th><input type="email" id="email" required><br></th>
+            </tr>
+            <tr>
+                <th><label for="password">Password</label></th>
+                <th><input type="password" id="password" minlength="6" required></th>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" value="Login" style="background-color:white;" ></th>
+            </tr>
+        </table>
+        <div class="error" id="errorMessage"></div>
+    </form>
+    <hr>
+    <h3 id="blog">Blog Entries</h3>
+    <h4>First blog entry</h4>
+    <p class="p">This paragraph belongs to the first post of the blog entries. This blog is about the music store.<br>
+    Posted by Admin in Videos<br>14 December 2020</p>
+    <hr>
+    <h4>Second blog entry</h4>
+    <p class="p">This paragraph belongs to the second post of the blog entries. This blog is about the music store.<br>
+    Posted by Admin in Audios<br>20 December 2020</p>
+    <hr>
+    <h4>Third blog entry</h4>
+    <p class="p">This paragraph belongs to the third post of the blog entries. This blog is about the music store.<br>
+    Posted by Admin in Samples<br>22 December 2020</p>
+    <hr>
+    <div id="view">
+        <input type="submit" value="View All" style="background-color:grey;">
+    </div>
+</aside>
+
+<main>
+    <h2>Latest Albums</h2>
+    <div class="albums">
+        <div>
+            <img src="/images2/music1.jpg" height="180px">
+            <p style="font-size:large;">Melodies</p>
+            <p style="color:rgb(177,143,79);">Harris Jayaraj</p>
+            <button class="Viewmore">More</button>
+        </div>
+        <div>
+            <img src="images2/music2.jpg" height="180px">
+            <p style="font-size:large;">Travel Vibes</p>
+            <p style="color:rgb(177,143,79);">Yuvan Shankar Raja</p>
+            <button class="Viewmore">More</button>
+        </div>
+        <div>
+            <img src="images2/music3.jpg" height="180px">
+            <p style="font-size:large;">Kuthu Songs</p>
+            <p style="color:rgb(177,143,79);">G V Prakash Kumar</p>
+            <button class="Viewmore">More</button>
+        </div>
+    </div>
+    <hr>
+    <h2>News</h2>
+    <div class="down">
+        <img src="/images2/music5.jpg" height="229px" width="300px" style="padding-right:40px; float:left;">
+        <h3 style="color:yellow; font-size:larger;">News Title</h3>
+        14 OCT 2020
+        <p>Music is a form of art that uses sound organized in time. It's a combination of melodies and harmony that soothes you. Music can also refer to the art of composing pleasant sounds with the help of musical instruments.</p>
+        NO MUSIC NO LIFE<br><br>
+        <a href="#" class="news">View More...</a>
+    </div>
+</main>
+</span>
+
+<div class="subscribe">
+    <h3>Subscribe to Our Newsletter</h3>
+    <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="submit" value="Subscribe">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Music Store. All rights reserved.</p>
+</footer>
+
+<script>
+    // JavaScript form validation
+    const form = document.getElementById("loginForm");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const errorMessage = document.getElementById("errorMessage");
+
+    form.addEventListener("submit", function(event) {
+        let valid = true;
+        let messages = [];
+
+        if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
+            messages.push("Please enter a valid email.");
+            valid = false;
+        }
+
+        if (passwordInput.value.length < 6) {
+            messages.push("Password must be at least 6 characters long.");
+            valid = false;
+        }
+
+        if (!valid) {
+            event.preventDefault();
+            errorMessage.innerHTML = messages.join("<br>");
+        }
+    });
+</script>
+
+</body>
+</html>
