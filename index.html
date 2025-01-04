@@ -188,15 +188,20 @@
     </script>
 
     <script>
-        var sidemeu = document.getElementById("sidemenu");
+        var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemeu.style.right="0";
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-
-        function closemenu(){
-            sidemeu.style.right="-200px";
+        
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
+        
+        document.querySelectorAll("nav ul li").forEach(link => {
+            link.addEventListener("click", closemenu);
+        });
+        
     </script>
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (event) {
